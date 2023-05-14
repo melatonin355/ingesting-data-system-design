@@ -55,16 +55,15 @@ Here is a suggested workflow to handle a new set of data sources:
 1. **Data Extraction**: Start by extracting data from a few sources to familiarize yourself with their characteristics and peculiarities. A few years ago, I was working on figuring out if covid had an impact on high school students. The first step was to exact all NCES.ed.gov test data with a few scripts, here is how I did it: 
 https://github.com/apaniagua6/ncesdata
 
-2. **Exploratory Scripts**: Use quick Python scripts in Jupyter notebooks for exploratory data analysis. This will help you better understand the data and identify potential issues. EDA (Explarotary Data Analysis) is a tool you should add to your arsenal to get a feel for what type of data processing you will be doing. I created a sample EDA for NOAS weather data in the following directory [./eda-csv/](./eda-csv/) 
+2. **Exploratory Scripts**: Use quick Python scripts in Jupyter notebooks for exploratory data analysis. This will help you better understand the data and identify potential issues. EDA (Explarotary Data Analysis) is a tool you should add to your arsenal to get a feel for what type of data processing you will be doing. I created a sample EDA for NOAS weather data in the following directory [https://github.com/melatonin355/ingesting-data-system-design/tree/main/eda-csv](https://github.com/melatonin355/ingesting-data-system-design/tree/main/eda-csv/) 
 
+2. **Addressing Extraction Nuances**: After gaining insights into the data extraction process and identifying potential challenges, work on strategies to navigate these issues.
 
-3. **Addressing Extraction Nuances**: After gaining insights into the data extraction process and identifying potential challenges, work on strategies to navigate these issues.
+3. **Handling API Challenges**: Be prepared for situations where APIs may be unreliable or fragmented. For example, data from 1986 - 2000 might be in one format, and data from 2000 - 2017 might be in another. Approach these challenges with patience and systematic problem-solving. Aim to present your findings in a digestible manner, such that the next person can replicate your work in a fraction of the time.
 
-4. **Handling API Challenges**: Be prepared for situations where APIs may be unreliable or fragmented. For example, data from 1986 - 2000 might be in one format, and data from 2000 - 2017 might be in another. Approach these challenges with patience and systematic problem-solving. Aim to present your findings in a digestible manner, such that the next person can replicate your work in a fraction of the time.
+4. **Productionizing an MVP**: Once you have a solid understanding of the data and its challenges, start developing a Minimum Viable Product (MVP). Use tools like Python, Spark, Airflow, and Lambda functions to build this initial version of the data pipeline.
 
-5. **Productionizing an MVP**: Once you have a solid understanding of the data and its challenges, start developing a Minimum Viable Product (MVP). Use tools like Python, Spark, Airflow, and Lambda functions to build this initial version of the data pipeline.
-
-6. **Creating Libraries**: As the pipeline becomes more mature, start abstracting common tasks into libraries. This will make the pipeline easier to maintain and enable others to leverage your work more effectively.
+5. **Creating Libraries**: As the pipeline becomes more mature, start abstracting common tasks into libraries. This will make the pipeline easier to maintain and enable others to leverage your work more effectively.
 
 # Process Data
 
