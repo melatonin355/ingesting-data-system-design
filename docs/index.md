@@ -129,16 +129,27 @@ ML model creation, tunning, etc is outside of the scope of this system design bu
 
 5. **Model Deployment and Monitoring**: After a model is trained and validated, it's deployed to make predictions on new data. It's important to monitor the model's performance over time to ensure it's still performing well as new data comes in.
 
-I have seen some interesting open source technologies in each of the above areas being developed and released in the last few months so it's important to create quick MVP's when deciding on which framework/tool to use within the context of the system that is already operational. By having a raw datalake, processed datalake, and kafka this provides places to tap into the pipeline to add the above. 
+I have seen some interesting open source technologies in each of the above areas being developed and released in the last few months so it's important to create quick MVP's when deciding on which framework/tool to use within the context of the system that is already operational. By having a raw datalake, processed datalake, and kafka this provides places to tap into the pipeline and add the above pieces. 
 
 
 ## Deployment
 
+- https://domain-challenger.vercel.app/docs/deployment-mechanics
+- https://domain-challenger.vercel.app/docs/deployment-ideas/versioning
+- https://domain-challenger.vercel.app/docs/deployment-ideas/observability 
+
+tldr; We can use terraform, AWS, and align on a versioning strategy. We should also wear an SRE hat and build observability into our system and aknowledge that we can automate our processess through time. 
+
+
 ## Further Reading 
-- https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119/
+
+I had to build above system from scratch so I have a deep understanding on the various issues that might arise. If you want a more theoretical solution, you can combine the designs from the following book: 
+
+- [System Design Interview - An Insider's Guide](https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119/)
   - Chapter 5: Metrics Monitoring
   - Chapter 6: Ad Click Event Aggregation
   - Chapter 13: Stock Exchange
+
 
 
 ## Extra 
