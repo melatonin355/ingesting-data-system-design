@@ -55,7 +55,7 @@ Here is a suggested workflow to handle a new set of data sources:
 1. **Data Extraction**: Start by extracting data from a few sources to familiarize yourself with their characteristics and peculiarities. A few years ago, I was working on figuring out if covid had an impact on high school students. The first step was to exact all NCES.ed.gov test data with a few scripts, here is how I did it: 
 https://github.com/apaniagua6/ncesdata
 
-2. **Exploratory Scripts**: Use quick Python scripts in Jupyter notebooks for exploratory data analysis. This will help you better understand the data and identify potential issues. EDA (Explarotary Data Analysis) is a tool you should add to your arsenal to get a feel for what type of data processing you will be doing. I created a sample EDA for NOAS weather data in the following directory [https://github.com/melatonin355/ingesting-data-system-design/tree/main/eda-csv](https://github.com/melatonin355/ingesting-data-system-design/tree/main/eda-csv/) 
+2. **Exploratory Scripts**: Use quick Python scripts in Jupyter notebooks for exploratory data analysis. This will help you better understand the data and identify potential issues. EDA (Explarotary Data Analysis) is a tool you should add to your arsenal to get a feel for what type of data processing you will be doing. I created a sample EDA for NOAS weather data in the following directory [https://github.com/melatonin355/ingesting-data-system-design/blob/main/eda-csv/EDA-load-NYC.ipynb](https://github.com/melatonin355/ingesting-data-system-design/blob/main/eda-csv/EDA-load-NYC.ipynb) 
 
 
 3. **Addressing Extraction Nuances**: After gaining insights into the data extraction process and identifying potential challenges, work on strategies to navigate these issues.
